@@ -37,4 +37,8 @@ The script follows the following steps to generate the tidy data set:
 
 8. Stored the resulting tidy data in a new data frame: tidy_dataset_mean_std
 
-9. Generated a new data set with the average of each variable for each activity and each subject: tidy_dataset_mean_std_averages
+9. Stored the tidy data set as tidy_dataset_mean_st.txt using write.table() using row.name = FALSE
+
+10. Generated a new data set with the average of each variable for each activity and each subject: tidy_dataset_mean_std_averages
+
+11. Stored the tidy data set as tidy_dataset_mean_st_averages.txt using write.table() using row.name = FALSE

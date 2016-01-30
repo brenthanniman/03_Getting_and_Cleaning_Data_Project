@@ -51,8 +51,14 @@ for (i in 1:6) {subset$activity <- sub(activity_labels$index[i],activity_labels$
 ## Give a meaningful name to the dataset
 tidy_dataset_mean_std <- subset
 
+## Write dataset to file
+write.table(tidy_dataset_mean_std, "tidy_dataset_mean_std.txt", row.name=FALSE)
+
 ## Provide an independet tidy data set with the average of each variable for each activity and each subject
 tidy_dataset_mean_std_averages <- tbl_df(tidy_dataset_mean_std)
 tidy_dataset_mean_std_averages <- tidy_dataset_mean_std_averages %>%
   group_by(subject, activity) %>%
   summarise_each(funs(mean))
+
+## Write dataset to file
+write.table(tidy_dataset_mean_std_averages,"tidy_dataset_mean_std_averages.txt", row.name=FALSE)
