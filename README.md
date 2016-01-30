@@ -1,7 +1,9 @@
 # Getting and Cleaning Data Project
 
 This R Script: run_analysis.R generates a tidy data set from data collected from Samsung Galaxy S accelerometers.
-The original data can be found at the UCI Machine Learning Repository website: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+The original data can be found at the UCI Machine Learning Repository website: 
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 The raw data can be found at the following URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 The script follows the following steps to generate the tidy data set:
